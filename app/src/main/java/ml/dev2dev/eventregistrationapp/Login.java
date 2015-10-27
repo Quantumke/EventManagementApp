@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.nativecss.NativeCSS;
+
 public class Login extends AppCompatActivity {
     Button facebook, gplus, twitter;
     TextView login;
@@ -17,6 +19,7 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        NativeCSS.styleWithCSS("initial.css", "ml.dev2dev.eventregistrationapp");
         setContentView(R.layout.activity_login);
         login = (TextView) findViewById(R.id.login);
         gplus = (Button) findViewById(R.id.gplus);
