@@ -34,7 +34,7 @@ public class Login extends AppCompatActivity {
         });
 
 
-        login.setOnClickListener(new View.OnClickListener() {
+        gplus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent a = new Intent(Login.this, MainActivity.class);
@@ -44,7 +44,7 @@ public class Login extends AppCompatActivity {
             }
         });
 
-        login.setOnClickListener(new View.OnClickListener() {
+        facebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent a = new Intent(Login.this, MainActivity.class);
@@ -54,7 +54,7 @@ public class Login extends AppCompatActivity {
             }
         });
 
-        login.setOnClickListener(new View.OnClickListener() {
+        twitter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent a = new Intent(Login.this, MainActivity.class);
