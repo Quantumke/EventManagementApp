@@ -2,11 +2,15 @@
     <string name="app_name">EventRegistrationApp</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_login">WELCOME TO TWITTER FLIGHT</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">Event Activities</string>
     <string name="founder">
 
 
 
     </string>
+    <string name="title_activity_twitter">Twitter</string>
+    <string name="title_activity_speakers">Speakers</string>
+
+    <string name="title_activity_actors"></string>
 
 </resources>

@@ -7,26 +7,26 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-ImageView tweetimg;
+public class Twitter extends AppCompatActivity {
+Button cmdback;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_twitter);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-
-        tweetimg = (ImageView) findViewById(R.id.tweetimg);
-        tweetimg.setOnClickListener(new View.OnClickListener() {
+        cmdback = (Button) findViewById(R.id.cmdback);
+        cmdback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent b = new Intent(MainActivity.this, Twitter.class);
-                startActivity(b);
+                Intent i = new Intent(Twitter.this, MainActivity.class);
+                startActivity(i);
                 finish();
             }
         });
-
     }
 
 }
