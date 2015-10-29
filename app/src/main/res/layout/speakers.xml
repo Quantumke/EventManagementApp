@@ -68,30 +68,20 @@
                     android:paddingTop="24dp">
 
                     <TextView
-                        android:layout_width="159dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:gravity="center"
-                        android:text="Jack Dorsey"
+                        android:text="ux"
                         android:textAppearance="@style/TextAppearance.AppCompat.Title"
                         android:textIsSelectable="false"
-                        android:textSize="25sp"
-                        android:layout_marginLeft="100dp" />
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:id="@+id/imageView7"
-                        android:src="@drawable/jackdorsey"
-                        android:layout_marginTop="-30dp" />
+                        android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Jack Dorsey is an American programmer and entrepreneur widely known as a co-founder and CEO of Twitter"
-                        android:textSize="18sp"
-                        android:layout_marginLeft="100dp"
-                        android:layout_marginTop="-75dp" />
+                        android:text="ux"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 

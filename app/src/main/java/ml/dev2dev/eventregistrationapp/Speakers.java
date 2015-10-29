@@ -15,7 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-public class actors extends AppCompatActivity {
+public class Speakers extends AppCompatActivity {
     FloatingActionButton fab;
     CollapsingToolbarLayout collapsingToolbar;
     int mutedColor = R.attr.colorPrimary;
@@ -23,8 +23,7 @@ public class actors extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_actors
-        );
+        setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -50,6 +49,6 @@ public class actors extends AppCompatActivity {
         });
     }
 
-    }
+}
 
 
