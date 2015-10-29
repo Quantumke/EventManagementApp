@@ -78,11 +78,11 @@
                         android:textSize="25sp"
                         android:layout_marginLeft="100dp" />
 
-                    <ImageView
+                    <com.github.siyamed.shapeimageview.CircularImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/imageView7"
                         android:src="@drawable/jackdorsey"
+                        app:siBorderWidth="6dp"
                         android:layout_marginTop="-30dp" />
 
                     <TextView
