@@ -95,7 +95,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Introduction to thh sumit"
+                        android:text="Introduction to the sumit"
                         android:textSize="18sp"
                         android:layout_marginLeft="100dp"
                         android:layout_marginTop="-100dp" />

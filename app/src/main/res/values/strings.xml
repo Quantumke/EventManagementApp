@@ -13,5 +13,6 @@
 
     <string name="title_activity_actors"></string>
     <string name="title_activity_agenda">agenda</string>
+    <string name="title_activity_detailed_agenda">detailed_agenda</string>
 
 </resources>
