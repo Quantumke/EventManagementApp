@@ -91,7 +91,7 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="51.5dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="AGENDA"
             android:id="@+id/textView4"

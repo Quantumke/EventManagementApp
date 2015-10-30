@@ -1,6 +1,7 @@
 package ml.dev2dev.eventregistrationapp;
 
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -21,6 +22,14 @@ public class actors extends AppCompatActivity {
     int mutedColor = R.attr.colorPrimary;
 
     @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent b = new Intent(actors.this, MainActivity.class);
+        startActivity(b);
+        finish();
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actors
@@ -38,7 +47,7 @@ public class actors extends AppCompatActivity {
             }
         });
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(),
-                R.drawable.logo);
+                R.drawable.hdr);
 
         Palette.from(bitmap).generate(new Palette.PaletteAsyncListener() {
             @Override
