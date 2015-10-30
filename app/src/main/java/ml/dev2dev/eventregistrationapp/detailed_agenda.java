@@ -1,13 +1,20 @@
 package ml.dev2dev.eventregistrationapp;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.graphics.Palette;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 public class detailed_agenda extends AppCompatActivity {
+    FloatingActionButton fab;
+    CollapsingToolbarLayout collapsingToolbar;
+    int mutedColor = R.attr.colorPrimary;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,14 +23,26 @@ public class detailed_agenda extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        collapsingToolbar = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+        collapsingToolbar.setTitle("Details");
+        fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View v) {
+                Snackbar.make(v, "You clicked on the fab", Snackbar.LENGTH_SHORT).show();
             }
         });
-    }
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(),
+                R.drawable.hdr);
 
+        Palette.from(bitmap).generate(new Palette.PaletteAsyncListener() {
+            @Override
+            public void onGenerated(Palette palette) {
+
+                mutedColor = palette.getMutedColor(R.attr.colorPrimaryDark);
+                collapsingToolbar.setContentScrimColor(mutedColor);
+            }
+        });
+
+    }
 }
