@@ -29,7 +29,7 @@ public class actors extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         collapsingToolbar = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
-        collapsingToolbar.setTitle("AndroidSources");
+        collapsingToolbar.setTitle("SPEAKERS");
         fab=(FloatingActionButton)findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
