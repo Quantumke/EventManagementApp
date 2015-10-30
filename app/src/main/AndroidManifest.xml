@@ -43,6 +43,11 @@
             android:label="@string/title_activity_actors"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity
+            android:name=".agenda"
+            android:label="@string/title_activity_agenda"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>
