@@ -9,217 +9,114 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main"
-    tools:context="ml.dev2dev.eventregistrationapp.MainActivity">
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="200dp"
-        android:layout_height="300dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:weightSum="1"
-        android:id="@+id/linearLayout">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="SPEAKER"
-            android:id="@+id/textView"
-            android:layout_weight="0.14"
-            android:paddingLeft="60dp"
-            android:paddingTop="20dp"
-            android:textColor="#fff"
-            android:background="#F36719" />
-
-        <ImageView
-            android:layout_width="63dp"
-            android:layout_height="100dp"
-            android:id="@+id/imageView2"
-            android:src="@drawable/jackdorsey"
-            android:layout_marginLeft="60dp" />
-
-        <TextView
-            android:layout_width="180dp"
-            android:layout_height="100dp"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Jack Dorsey is an American programmer and entrepreneur widely
-        known as a co-founder and CEO of Twitter "
-            android:id="@+id/textView2"
-            android:layout_weight="0.43" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView3"
-            android:layout_weight="0.14"
-            android:src="@drawable/twt"
-            android:layout_marginLeft="30dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="\@jacktwt"
-            android:id="@+id/textView3"
-            android:layout_weight="0.14"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="-20dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="...More"
-            android:id="@+id/textView7"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="50dp"
-            android:textColor="#F36719" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="150dp"
-        android:layout_height="300dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:weightSum="1"
-        android:id="@+id/linearLayout2">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="51.5dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="AGENDA"
-            android:id="@+id/textView4"
-            android:background="#F36719"
-            android:textColor="#ffffff"
-            android:paddingTop="20dp"
-            android:paddingLeft="20dp" />
-
-        <ImageView
-            android:layout_width="63dp"
-            android:layout_height="100dp"
-            android:id="@+id/imageView4"
-            android:layout_weight="0.06"
-            android:src="@drawable/agg"
-            android:layout_marginLeft="30dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Developers challange engineering field and prove possible p vs np"
-            android:id="@+id/textView5"
-            android:layout_weight="0.19" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView5"
-            android:layout_weight="0.06"
-            android:src="@drawable/twt"
-            android:layout_marginLeft="20dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Share on tweeter"
-            android:id="@+id/textView6"
-            android:layout_weight="0.06"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="-20dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="...more"
-            android:id="@+id/textView8"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="0.18"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="20dp"
-            android:textColor="#F36719" />
-    </LinearLayout>
+    tools:context="ml.dev2dev.eventregistrationapp.MainActivity"
+    android:background="#F4F3F0">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_below="@+id/linearLayout"
-        android:layout_toLeftOf="@+id/linearLayout2"
-        android:layout_toStartOf="@+id/linearLayout2"
         android:id="@+id/linearLayout3"></LinearLayout>
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="200dp"
-        android:layout_height="400dp"
-        android:layout_below="@+id/linearLayout"
-        android:layout_alignRight="@+id/linearLayout3"
-        android:layout_alignEnd="@+id/linearLayout3">
+    <GridLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#fff"
+        android:id="@+id/speaker">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/jackdorsey"
+            app:siBorderWidth="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/view"
+            android:layout_marginLeft="25dp"
+            android:layout_row="0"
+            android:layout_column="0" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="43dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Twitter"
-            android:id="@+id/textView9"
-            android:paddingLeft="60dp"
-            android:textColor="#ffffff"
-            android:background="#F36719" />
-
-        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tweetimg"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/feed" />
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="SPEAKERS"
+            android:id="@+id/textView"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="160dp" />
 
-    </LinearLayout>
+    </GridLayout>
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/linearLayout"
+    <GridLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/linearLayout"
-        android:layout_toEndOf="@+id/linearLayout"
-        android:weightSum="1">
+        android:background="#fff"
+        android:id="@+id/agenda">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="47dp"
-            android:text="Information"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/textView11"
-            android:textColor="#ffffff"
-            android:background="#F36719"
-            android:paddingLeft="0dp" />
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/calender"
+            app:siBorderWidth="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/view2"
+            android:layout_marginLeft="25dp"
+            android:layout_row="0"
+            android:layout_column="0" />
+    </GridLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="You can find other details by clicking here"
-            android:id="@+id/textView10"
-            android:layout_weight="0.22" />
+    <GridLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#fff"
+        android:id="@+id/twitter">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="..more"
-            android:id="@+id/textView12"
-            android:layout_marginLeft="80dp"
-            android:textColor="#F36719" />
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            app:siBorderWidth="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/view3"
+            android:layout_marginLeft="25dp"
+            android:layout_row="0"
+            android:layout_column="0" />
+    </GridLayout>
 
-    </LinearLayout>
+    <GridLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignTop="@+id/twitter"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#fff"
+        android:id="@+id/info">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/info"
+            app:siBorderWidth="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/view3"
+            android:layout_marginLeft="25dp"
+            android:layout_row="0"
+            android:layout_column="0" />
+    </GridLayout>
 
 
 </RelativeLayout>
