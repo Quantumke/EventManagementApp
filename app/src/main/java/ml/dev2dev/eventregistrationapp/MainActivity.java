@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
 ImageView tweetimg;
     TextView textView7;
     TextView textView8;
+    TextView textView12;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,7 @@ ImageView tweetimg;
         textView8 =(TextView) findViewById(R.id.textView8);
         textView7 = (TextView) findViewById(R.id.textView7);
         tweetimg = (ImageView) findViewById(R.id.tweetimg);
+        textView12 = (TextView) findViewById(R.id.textView12);
         tweetimg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,7 +49,14 @@ ImageView tweetimg;
                 finish();
             }
         });
-
+        textView12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent n = new Intent(MainActivity.this, information.class);
+                startActivity(n);
+                finish();
+            }
+        });
     }
 
 }
