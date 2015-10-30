@@ -63,6 +63,11 @@
             android:label="@string/title_activity_payment"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity
+            android:name=".wifi"
+            android:label="@string/title_activity_wifi"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>
